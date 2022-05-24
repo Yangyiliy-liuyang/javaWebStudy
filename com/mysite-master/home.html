@@ -1,0 +1,59 @@
+<html lang="zh">
+<head>
+    <meta charset="utf8">
+    <title>Yangyiliy的小站-首页</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<div class="nav nav-dark nav-fixed">
+    <label>Yangyiliy的小站</label>
+    <div class="nav-group nav-left">
+        <div class="nav-item selected">
+            <a href="home.html">首页</a>
+        </div>
+        <div class="nav-item">
+            <a href="learning.html">学习</a>
+        </div>
+        <div class="nav-item">
+            <a href="lab.html">实验</a>
+        </div>
+        <div class="nav-item">
+            <a href="about.html">关于我</a>
+        </div>
+    </div>
+</div>
+<div class="content home-content">
+    <div class="humdrum">
+        <h3 id="showText"></h3>
+    </div>
+</div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/my.js"></script>
+<script>
+    const showText = () => {
+        const text = "其实吧...我也没想好首页放点啥.";
+        let i = 0;
+        const interval = setInterval(
+            () => {
+                if (text[i] === undefined) {
+                    clearInterval(interval)
+                }
+                $('#showText').append(text[i]);
+                console.log(text[i])
+                i++;
+            }, 200
+        )
+    }
+
+    $(document).ready(
+        () => {
+            showText();
+        }
+    )
+
+</script>
+</html>
+
+

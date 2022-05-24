@@ -12,20 +12,33 @@
          &nbsp; 空格
          h1---h6  标题
          -->
-  <!-- a标签是 超链接
-	 		   href     属性设置连接的地址
-	 		   target   属性设置哪个目标进行跳转
-	 			 _self		表示当前页面(默认值)
-	 			 _blank		表示打开新页面来进行跳转
-	 -->
-  <a href="http://localhost:8080">百度</a><br/>
-  <a href="http://localhost:8080" target="_self">百度_self</a><br/>
-  <a href="http://localhost:8080" target="_blank">百度_blank</a><br/>
-
   <body bgcolor="green" >
     <font color="#dc143c" face="宋体" size="8">h&nbsp;ello&lt;br&gt; </font><!-- 注释 -->
     <button onclick="alert('你好')">按钮</button>
     <h2>hello</h2>
     <hr>
+
+    <!-- a标签是 超链接
+         href     属性设置连接的地址
+         target   属性设置哪个目标进行跳转
+         _self		表示当前页面(默认值)
+         _blank		表示打开新页面来进行跳转
+  -->
+    <a href="http://localhost:8080">百度</a><br/>
+    <a href="http://localhost:8080" target="_self">百度_self</a><br/>
+    <a href="http://localhost:8080" target="_blank">百度_blank</a><br/>
+    <hr>
+
+    <!--需求1：使用无序，列表方式，把东北F4，赵四，刘能，小沈阳，宋小宝，展示出来
+         ul 是无序列表
+             type属性可以修改列表项前面的符号
+         li  是列表项
+     -->
+    <ul type="none">
+      <li>赵四</li>
+      <li>刘能</li>
+      <li>小沈阳</li>
+      <li>宋小宝</li>
+    </ul>
   </body>
 </html>
